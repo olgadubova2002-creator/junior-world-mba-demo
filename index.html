@@ -195,6 +195,10 @@
   .cta span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 36ch; text-wrap: pretty; }
   @media (max-width: 860px) { .prices { grid-template-columns: 1fr; gap: var(--v-6); } }
 
+  #rezhim .prices { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+  #rezhim .prices__head { order: 2; }
+  @media (max-width: 860px) { #rezhim .prices { grid-template-columns: 1fr; } #rezhim .prices__head { order: 0; } }
+
   /* ---- 6 · команда ---- */
   .prep { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--v-8) var(--v-9); align-items: center; }
   .prep__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 5 / 4; background: var(--v-surface); width: 100%; }
@@ -351,6 +355,26 @@
             <div class="room"><figure><img src="assets/lounge.webp" alt="Мягкое кресло и полка с игрушками в холле" width="900" height="1200" loading="lazy"><figcaption><b>Уголок отдыха</b>Мягкое кресло и полка с игрушками.</figcaption></figure></div>
             <div class="room room--wide"><figure><img src="assets/mascot.webp" alt="Ростовая кукла утёнка в костюме моряка на фоне воздушных шаров" width="1000" height="600" loading="lazy"><figcaption><b>Праздники и вечеринки</b>В отзывах родители вспоминают праздники и фотосессии.</figcaption></figure></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5а · РЕЖИМ И ПИТАНИЕ: фактов в открытых источниках нет, поэтому вопросы родителей и ответ «на экскурсии» -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f3ece1" id="rezhim" aria-label="Режим дня и питание">
+      <div class="v-wrap prices">
+        <div class="prices__head" data-v-in data-v-stagger="60">
+          <span class="v-label">Режим и питание</span>
+          <h2 class="v-display v-display--md">О чём родители спрашивают чаще всего</h2>
+          <p>Режим дня, питание, сон и здоровье детей лучше увидеть своими глазами. На экскурсии расскажем, как всё устроено, и ответим на любые вопросы.</p>
+          <div class="cta"><a class="v-btn" href="https://wa.me/79051193426?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8E." target="_blank" rel="noopener">Записаться на экскурсию</a></div>
+        </div>
+        <div class="prices__list">
+          <ul class="rows" data-v-in data-v-stagger="50">
+            <li><h3>Режим дня</h3><span class="price">на экскурсии</span><p>Во сколько начинается и заканчивается день, как чередуются занятия, игры и отдых.</p></li>
+            <li><h3>Питание</h3><span class="price">на экскурсии</span><p>Как организовано питание, в какое время приём пищи и что можно уточнить заранее.</p></li>
+            <li><h3>Тихий час</h3><span class="price">на экскурсии</span><p>Как проходит дневной отдых и как учитываются привычки ребёнка.</p></li>
+            <li><h3>Здоровье и гигиена</h3><span class="price">на экскурсии</span><p>Как центр следит за здоровьем и гигиеной детей, что нужно знать при приёме.</p></li>
+          </ul>
         </div>
       </div>
     </section>
