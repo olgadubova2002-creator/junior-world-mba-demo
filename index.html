@@ -136,9 +136,9 @@
   .stages li span { position: relative; z-index: 0; color: var(--v-ink); opacity: calc(.55 + .45 * var(--on)); }
   .stages li span::before { content: ""; position: absolute; z-index: -1; left: -.25em; right: -.25em; top: .5em; height: .75em; border-radius: 6px; background: var(--v-sand); transform-origin: left; transform: scaleX(var(--on)); }
   .way__note { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 40ch; }
-  .way__card { --k: clamp(0, (var(--v-p, 0) - .06) / .8, 1); position: relative; justify-self: end; width: min(100%, 38rem); aspect-ratio: 5 / 4; border-radius: calc(var(--v-radius) + 6px); background: var(--v-accent); box-shadow: var(--v-e2); display: grid; place-items: center; overflow: hidden; }
+  .way__card { --k: clamp(0, (var(--v-p, 0) - .06) / .8, 1); position: relative; justify-self: end; width: min(100%, 40rem); aspect-ratio: 4 / 3; border-radius: calc(var(--v-radius) + 6px); background: var(--v-accent); box-shadow: var(--v-e2); display: grid; place-items: center; overflow: hidden; }
   .way__card::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, rgb(255 255 255 / .1), transparent 55%); pointer-events: none; }
-  .way__logo { position: relative; width: 86%; }
+  .way__logo { position: relative; width: 90%; margin-top: -4%; }
   .way__logo img { display: block; width: 100%; height: auto; }
   .way__logo .dim { opacity: .28; }
   .way__logo .lit { position: absolute; inset: 0; clip-path: inset(0 calc((1 - var(--k)) * 100%) 0 0); }
@@ -219,7 +219,7 @@
   .reviews__rating a { color: var(--v-ink); }
   .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
   .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
-  .reviews__item--big .reviews__text { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-base); line-height: 1.5; }
+  .reviews__item--big .reviews__text { font-weight: 500; font-size: var(--v-t-md, 1.125rem); line-height: 1.5; }
   .reviews__text { text-wrap: pretty; }
   .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
   .reviews__meta b { color: var(--v-ink); font-weight: 600; }
@@ -273,17 +273,15 @@
         <div class="hero__scrim" aria-hidden="true"></div>
 
         <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.5 0 0.1">
-          <p class="hero__label"><b>Тула, Пушкинская 57Б</b> <span>4,4 на Яндекс.Картах · 29 отзывов</span></p>
+          <p class="hero__label">4,4 на Яндекс.Картах · 29 отзывов</p>
           <h1 class="v-display v-display--xl" data-v-kinetic="lines">Детский сад и центр развития в Туле</h1>
           <p class="v-lede">Для детей от 1 года: ясли, группы полного и выходного дня, вокал, подготовка к школе.</p>
           <div class="hero__cta">
             <a class="v-btn" href="https://wa.me/79051193426?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8E." target="_blank" rel="noopener" data-v-magnet="0.2" data-v-rise="0">Записаться на экскурсию</a>
-            <p class="hero__hint">Покажем центр, познакомим с педагогами и направлениями.</p>
           </div>
         </div>
 
         <div class="v-copy v-copy--lead hero__turn" data-v-cue="0.5 1 0.08 0">
-          <p class="hero__label">Выбирать сад вслепую не нужно</p>
           <h2 class="v-display">Лучше один раз <span class="mark">увидеть</span> самим</h2>
           <p class="v-lede">Приходите на экскурсию: <b>посмотрите группы, музыкальные классы и игровые,</b> задайте вопросы тем, кто будет рядом с ребёнком.</p>
         </div>
@@ -294,7 +292,6 @@
     <section class="v-section v-section--tight" data-v-act="flow" id="formaty" aria-label="Форматы">
       <div class="v-wrap komu">
         <div class="komu__copy" data-v-in data-v-stagger="70">
-          <span class="v-label">Форматы</span>
           <h2 class="v-display v-display--lg">Сад на день, выходные или занятия</h2>
           <p>Центр работает как частный детский сад и как центр развития. Выберите формат под вашу семью, остальное обсудим на экскурсии.</p>
           <ul class="lines">
@@ -315,7 +312,6 @@
       <div data-v-stage>
         <div class="way">
           <div class="way__copy" data-v-cue="0 1 0 0" data-v-rise="0">
-            <span class="v-label">Путь</span>
             <h2 class="v-display">От первых шагов до школы – в одном месте</h2>
             <p>На логотипе центра дети разного возраста: от малышей с кубиками до школьников у мольберта. В центре есть группы для самых маленьких, детский сад на день, занятия и подготовка к школе.</p>
             <ol class="stages" aria-label="Этапы">
@@ -343,7 +339,6 @@
         <div class="les">
           <div class="les__rail" data-v-pan="0.03">
             <div class="card--intro" data-v-cue="0 1 0 0" data-v-rise="0">
-              <span class="v-label">Центр</span>
               <h2 class="v-display">Комнаты, где проходит день</h2>
               <p>Музыкальные классы, игровые, светлый класс и уголки отдыха. Всё это можно обойти на экскурсии.</p>
               <a class="v-btn" href="https://wa.me/79051193426?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8E." target="_blank" rel="noopener">Записаться на экскурсию</a>
@@ -363,7 +358,6 @@
     <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f3ece1" id="rezhim" aria-label="Режим дня и питание">
       <div class="v-wrap prices">
         <div class="prices__head" data-v-in data-v-stagger="60">
-          <span class="v-label">Режим и питание</span>
           <h2 class="v-display v-display--md">О чём родители спрашивают чаще всего</h2>
           <p>Режим дня, питание, сон и здоровье детей лучше увидеть своими глазами. На экскурсии расскажем, как всё устроено, и ответим на любые вопросы.</p>
           <div class="cta"><a class="v-btn" href="https://wa.me/79051193426?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8E." target="_blank" rel="noopener">Записаться на экскурсию</a></div>
@@ -383,7 +377,6 @@
     <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f8f3ec" id="ceny" aria-label="Стоимость">
       <div class="v-wrap prices">
         <div class="prices__head" data-v-in data-v-stagger="60">
-          <span class="v-label">Стоимость</span>
           <h2 class="v-display v-display--md">Цену называем на экскурсии</h2>
           <p>Стоимость зависит от формата и количества дней. Напишите нам, и мы пришлём актуальный прайс.</p>
           <ul class="terms">
@@ -416,10 +409,8 @@
           <img src="assets/team.webp" alt="Две сотрудницы центра в белых поло с бейджами" width="1000" height="600" loading="lazy">
         </figure>
         <div class="prep__copy" data-v-in data-v-stagger="70">
-          <span class="v-label">Команда</span>
           <h2 class="v-display v-display--md">Рядом с ребёнком – люди, которых хвалят родители</h2>
           <div class="said">
-            <p>«Дети играют, учатся, развиваются - все в одном месте.»<span class="src">Анна Г., Яндекс.Карты, 17 июля</span></p>
             <p>«Воспитательницы как вторые мамы, всегда внимательны и ласковы.»<span class="src">Анна Г., Яндекс.Карты, 17 июля</span></p>
           </div>
         </div>
@@ -431,7 +422,6 @@
       <div class="v-wrap reviews">
         <div class="reviews__head" data-v-in data-v-stagger="60">
           <div>
-            <span class="v-label">Отзывы</span>
             <h2 class="v-display v-display--lg">Что пишут на Яндекс.Картах</h2>
           </div>
           <div class="reviews__rating">
